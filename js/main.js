@@ -48,9 +48,9 @@ document.getElementById('game-board').appendChild(cardElement);
 
 var checkForMatch = function() {
  if (cardsInPlay[0] === cardsInPlay[1]){
-     alert("You've Found a Match");
+     setTimeout (function() { alert("You've Found a Match");}, 100);
  } else{
-   alert("Sorry Try Again");
+   setTimeout (function() { alert("Sorry Try Again");}, 100);
  }
 }
     
